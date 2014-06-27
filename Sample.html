@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
+    <script type="text/javascript" src="Grid.js"></script>
+    <link rel="stylesheet" href="Grid.css" />
+    <script type="text/javascript">
+        $(function () {
+
+            var userGrid = new function () {
+                return new Grid({
+                    parent: $("#userGridContainer")[0],
+                    checkbox: { selectAll: true, style: "width:20px;background:#E5F0D4;", titleStyle: "width:20px; text-align:left;" },
+                    width: 880,
+                    fields: [
+                    { name: "serialNo", title: "Serial No.", style: "width:110px;text-align: left;", titleStyle: "width:110px;text-align: left;" },
+                    { name: "title", title: "Title", style: "text-align: left;", titleStyle: "text-align: left;" },
+                    { name: "category", title: "Category", style: "width:10%;text-align: left;", titleStyle: "width:10%;text-align: left;" },
+                    { name: "type", title: "Type", style: "width:80px;text-align: left;", titleStyle: "width:80px;text-align: left;" },
+                    { name: "status", title: "Status", style: "width:80px;text-align: left;", titleStyle: "width:80px;text-align: left;" },
+                    { name: "effectivedate", title: "Date", style: "width:80px;text-align: left;", titleStyle: "width:80px;text-align: left;" }
+                    ]
+                });
+            }
+
+
+            userGrid.setData([
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" },
+                { serialNo: "1", title: "title1", category: "category1", type: "type1", status: "status1", effectivedate: "2000-01-01" }
+            ]);
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="userGridContainer">
+
+    </div>
+</body>
+</html>
