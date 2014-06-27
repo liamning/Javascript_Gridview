@@ -1,3 +1,16 @@
+var StringBuilder = function () {
+    this.stringArray = [];
+    this.append = function (str) {
+        this.stringArray.push(str);
+    }
+    this.clear = function () {
+        this.stringArray.length = 0;
+    }
+    this.toString = function () {
+        return this.stringArray.join("");
+    }
+}
+
 var Grid = function (para) {
 
     //initialize the grid variables
